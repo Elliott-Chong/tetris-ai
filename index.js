@@ -27,9 +27,9 @@ const faux_blocks = {
 };
 
 const SCALE = 2;
-const starting_coords = { x: 0, y: 200 };
-const game_size = { width: 480, height: 500 };
-const current_block_coords = { x: 230, y: 220 };
+const starting_coords = { x: 0, y: 160 };
+//517 557
+const game_size = { width: 517, height: 557 };
 const next_block_coords = [
   { x: 420, y: 240 },
   { x: 420, y: 265 },
@@ -60,7 +60,7 @@ const main = async () => {
     // screenCaptureToFile(img, "./screen.png");
 
     // check current block
-    let starting_pos = { x: 133, y: 218 };
+    let starting_pos = { x: 130, y: 190 };
     for (let i = 0; i < 20; i++) {
       for (let j = 0; j < 10; j++) {
         let coords = {
@@ -98,8 +98,8 @@ const main = async () => {
 
     // check held block
     let held_block_coords = [
+      { x: 50, y: 215 },
       { x: 50, y: 240 },
-      { x: 50, y: 267 },
     ];
     var held_hex = [];
     for (let i = 0; i < 2; i++) {
